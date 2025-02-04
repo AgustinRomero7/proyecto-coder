@@ -1,0 +1,65 @@
+  .paris-foto1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  .paris-foto1 p{
+    height: 101px;
+    margin-top: 100px;
+  
+  
+  }
+  
+  .paris-foto1 img{
+    height: 400px;
+    width: 540px;
+    border-radius:20px;
+    margin: 30px;
+    
+  }
+  
+  
+  .paris-foto2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  .paris-foto2 p{
+    height: 100px;
+    margin-top: 100px;
+  
+  
+  }
+  
+  .paris-foto2 img{
+    height: 400px;
+    width: 540px;
+    border-radius:20px;
+    margin: 30px;
+    
+  }
+  
+  .paris-foto3 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    text-align: center;
+   
+  }
+  
+  .paris-foto3 p {
+    height: 100px;
+    margin-top: 100px;
+    margin-right: 10px; 
+    justify-content: space-between;
+  }
+  
+  .paris-foto3 img {
+    height: 400px;
+    width: 540px;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  

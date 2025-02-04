@@ -1,0 +1,60 @@
+h2{
+    text-align: center;
+  }
+  
+  
+  .brasil-foto1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .brasil-foto1 p{
+    height: 100px;
+    margin-top: 100px;
+  }
+  
+  .brasil-foto1 img{
+    height: 400px;
+    width: 540px;
+    border-radius:20px;
+    margin: 30px;
+  }
+  
+  .brasil-foto2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .brasil-foto2 p{
+    height: 100px;
+    margin-top: 100px;
+  }
+  
+  .brasil-foto2 img{
+    height: 400px;
+    width: 540px;
+    border-radius:20px;
+    margin: 30px;
+  }
+  
+  .brasil-foto3 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    text-align: center;
+   
+  }
+  
+  .brasil-foto3 p {
+    height: 100px;
+    margin-top: 100px;
+    margin-right: 10px; 
+    justify-content: space-between;
+  }
+  
+  .brasil-foto3 img {
+    height: 400px;
+    width: 540px;
+    border-radius: 20px;
+    margin: 20px;}
+  
