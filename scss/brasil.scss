@@ -1,60 +1,90 @@
-h2{
-    text-align: center;
-  }
-  
-  
-  .brasil-foto1 {
+
+$primary-color: #007bff;
+$text-color: #333;
+$background-color: #f8f9fa;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+// .brasil-page {
+//   background-color: $background-color;
+//   color: $text-color;
+//   padding: 1rem;
+
+  .tituloB {
     display: flex;
     text-align: center;
     justify-content: center;
-  }
-  .brasil-foto1 p{
-    height: 100px;
-    margin-top: 100px;
-  }
-  
-  .brasil-foto1 img{
-    height: 400px;
-    width: 540px;
-    border-radius:20px;
-    margin: 30px;
-  }
-  
-  .brasil-foto2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  .brasil-foto2 p{
-    height: 100px;
-    margin-top: 100px;
-  }
-  
-  .brasil-foto2 img{
-    height: 400px;
-    width: 540px;
-    border-radius:20px;
-    margin: 30px;
-  }
-  
-  .brasil-foto3 {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    text-align: center;
+    color: $primary-color;
    
   }
-  
-  .brasil-foto3 p {
-    height: 100px;
-    margin-top: 100px;
-    margin-right: 10px; 
-    justify-content: space-between;
+// }
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brasil-foto1,
+.brasil-foto2,
+.brasil-foto3 {
+  @include flex-center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+
+  img {
+    @include responsive-image;
+    margin-bottom: 1rem;
   }
-  
-  .brasil-foto3 img {
-    height: 400px;
-    width: 540px;
-    border-radius: 20px;
-    margin: 20px;}
-  
+
+  p {
+    text-align: center;
+    max-width: 80%; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .brasil-foto1,
+  .brasil-foto2,
+  .brasil-foto3 {
+   flex-direction: column;
+   
+
+    p {
+      max-width: 100%; 
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .brasil-foto1,
+  .brasil-foto2,
+  .brasil-foto3 {
+    flex-direction: row; 
+    gap: 2rem;
+
+    img {
+      max-width: 45%;
+    }
+
+    p {
+      max-width: 50%;
+    }
+  }
+}

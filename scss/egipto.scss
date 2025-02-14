@@ -1,59 +1,82 @@
-#titulo-egipto{
-  text-align: center;
-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.egipto-foto1 {
-    display: flex;
+$primary-color: #007bff;
+
+@media (min-width: 1024px) {
+  #titulo-egipto {
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .egipto-foto1, .egipto-foto2, .egipto-foto3 {
+    display: flex;
     justify-content: center;
-  }
-  .egipto-foto1 p{
-    height: 100px;
-    margin-top: 100px;
-  }
-  
-  .egipto-foto1 img{
-    height: 400px;
-    width: 540px;
-    border-radius:20px;
-    margin: 30px;
-  }
-  
-  .egipto-foto2 {
-    display: flex;
     text-align: center;
-    justify-content: center;
   }
-  .egipto-foto2 p{
-    height: 100px;
-    margin-top: 100px;
-  }
-  
-  .egipto-foto2 img{
-    height: 400px;
-    width: 540px;
-    border-radius:20px;
-    margin: 30px;
-  }
-  
-  .egipto-foto3 {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    text-align: center;
-   
-  }
-  
-  .egipto-foto3 p {
-    height: 100px;
-    margin-top: 100px;
-    margin-right: 10px; 
-    justify-content: space-between;
-  }
-  
-  .egipto-foto3 img {
+
+  .egipto-foto1 img, .egipto-foto2 img, .egipto-foto3 img {
     height: 400px;
     width: 540px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 30px;
   }
+
+  .egipto-foto3 {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .egipto-foto3 p {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #titulo-egipto {
+    color: $primary-color;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .egipto-foto1, .egipto-foto2, .egipto-foto3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .egipto-foto1 img, .egipto-foto2 img, .egipto-foto3 img {
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 30px;
+  }
+
+  .egipto-foto3 p {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #titulo-egipto {
+    color: $primary-color;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .egipto-foto1, .egipto-foto2, .egipto-foto3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .egipto-foto1 img, .egipto-foto2 img, .egipto-foto3 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 30px;
+  }
+
+  .egipto-foto3 p {
+    margin: 10px;
+  }
+}
